@@ -51,12 +51,13 @@
   for (var i = 0; i < 4; i++) {
 	   slides.push({src: 'img ('+[i+1]+').jpg'});
   }
+  slides.sort(() => Math.random() - 0.5);
 
   $(document).ready(function(){
   	var myjR3DCarousel = $('.jR3DCarouselGallery').jR3DCarousel({
 	  width: "200",
 	  height: "200",
-          slides: slides.sort(() => Math.random() - 0.5),
+          slides: slides,
 	  slideLayout: "fill",
           navigation: '',
 	});
@@ -87,11 +88,8 @@
     </div>
 
   <div class="right">
-    	<h4 class="HeadingjR3DCarouselGallery"> चि. विनायक </h4>
-	<h4 class="HeadingjR3DCarouselGallery">  आणि  </h4>
-	<h4 class="HeadingjR3DCarouselGallery"> चि. सौ. का. राजश्री </h4>
-    	<div class="jR3DCarouselGallery"></div>
-<!--     <img height="400px" src="img (2).jpg" /> -->
+    	<h4 class="HeadingjR3DCarouselGallery"> चि. विनायक आणि चि. सौ. का. राजश्री</h4>
+	<div class="jR3DCarouselGallery"></div>
   </div>  
 <div>
   
