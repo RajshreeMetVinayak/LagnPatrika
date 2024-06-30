@@ -47,13 +47,14 @@
 <script>
   var slides = [];
 
-  for (var i = 0; i < 3; i++) {
+  for (var i = 0; i < 4; i++) {
 	   slides.push({src: 'img ('+[i+1]+').jpg'});
   }
 
   $(document).ready(function(){
   	var myjR3DCarousel = $('.jR3DCarouselGallery').jR3DCarousel({
 	  width: "200",
+	  height: "200",
           slides: slides.sort(() => Math.random() - 0.5),
 	  slideLayout: "fill",
           navigation: '',
