@@ -54,7 +54,8 @@
 
   <div class="main">
     <p></p>
-    <iframe allowfullscreen="allowfullscreen"
+    <iframe id="flipbook"
+            allowfullscreen="allowfullscreen"
             scrolling="no" class="fp-iframe"
             src="https://heyzine.com/flip-book/7fbd960a7f.html"
             style="border: 1px solid lightgray; width: 100%; height: 400px;">
@@ -76,9 +77,10 @@
 </div>
 <script>
       setTimeout(()=>{
-        var iframe = document.getElementById("myFrame");
+        var iframe = document.getElementById("flipbook");
         var elmnt = iframe.contentWindow.document.querySelector("#btnFullscreen");
-        elmnt.click()}, 2000)
+        elmnt.click();
+      }, 2000)
 </script>
   
 </body>
