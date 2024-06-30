@@ -49,10 +49,11 @@
 
   $(document).ready(function(){
   	var myjR3DCarousel = $('.jR3DCarouselGallery').jR3DCarousel({
+	  width: 200px;
           slides: slides.sort(() => Math.random() - 0.5).slice(0,3),
 	  slideLayout: "fill",
           navigation: '',
-	  });
+	});
 
   });
 </script>
