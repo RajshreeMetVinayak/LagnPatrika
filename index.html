@@ -75,7 +75,10 @@
   <a href="https://maps.app.goo.gl/ecLHRSt8CDRoi2hs7">विवाह स्थळ पहा </a>
 </div>
 <script>
-      setTimeout(()=>{document.querySelector("#btnFullscreen").click()}, 2000)
+      setTimeout(()=>{
+        var iframe = document.getElementById("myFrame");
+        var elmnt = iframe.contentWindow.document.querySelector("#btnFullscreen");
+        elmnt.click()}, 2000)
 </script>
   
 </body>
