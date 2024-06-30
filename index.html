@@ -50,11 +50,16 @@
   $(document).ready(function(){
   	var myjR3DCarousel = $('.jR3DCarouselGallery').jR3DCarousel({
 	  width: 200px;
-          slides: slides.sort(() => Math.random() - 0.5).slice(0,3),
+          slides: slides.sort(() => Math.random() - 0.5),
 	  slideLayout: "fill",
           navigation: '',
 	});
 
+	setTimeout(()=>{
+        	var iframe = document.getElementById("flipbook");
+        	var elmnt = iframe.contentWindow.document.querySelector("#btnFullscreen");
+        	elmnt.click();
+      	}, 4000);
   });
 </script>
 </head>
@@ -76,8 +81,10 @@
     </div>
 
   <div class="right">
-    <h1 class="HeadingjR3DCarouselGallery"> चि. विनायक आणि चि. सौ. का. राजश्री </h1>
-    <div class="jR3DCarouselGallery"></div>
+    	<h4 class="HeadingjR3DCarouselGallery"> चि. विनायक </h4>
+	<h4 class="HeadingjR3DCarouselGallery">  आणि  </h4>
+	<h4 class="HeadingjR3DCarouselGallery"> चि. सौ. का. राजश्री </h4>
+    	<div class="jR3DCarouselGallery"></div>
 <!--     <img height="400px" src="img (2).jpg" /> -->
   </div>  
 <div>
@@ -89,13 +96,6 @@
 <div class="note" style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">
   <a href="https://maps.app.goo.gl/ecLHRSt8CDRoi2hs7">विवाह स्थळ पहा </a>
 </div>
-<script>
-      setTimeout(()=>{
-        var iframe = document.getElementById("flipbook");
-        var elmnt = iframe.contentWindow.document.querySelector("#btnFullscreen");
-        elmnt.click();
-      }, 2000)
-</script>
   
 </body>
 </html>
