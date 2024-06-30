@@ -49,8 +49,8 @@
 
   $(document).ready(function(){
   	var myjR3DCarousel = $('.jR3DCarouselGallery').jR3DCarousel({
-          slides.sort(() => Math.random() - 0.5).slice(0,3),
-					slideLayout: "fill",
+          slides: slides.sort(() => Math.random() - 0.5).slice(0,3),
+	  slideLayout: "fill",
           navigation: '',
 	  });
 
